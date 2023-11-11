@@ -354,3 +354,7 @@ footer a:not(.nav-link) {
 .ddd {
   visibility: hidden
 }
+
+.d-contents {
+  display: contents;
+}
