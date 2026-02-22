@@ -12,8 +12,8 @@
     // Initialize On-scroll Animations
     AOS.init({
       anchorPlacement: 'top-left',
-      duration: 600,
-      easing: "ease-in-out",
+      duration: 500,
+      easing: "ease-out",
       once: true,
       mirror: false,
       disable: 'mobile'
@@ -88,7 +88,44 @@
     )
   }))
 
-  // Add your javascript here
+  /**
+   * Dark / Light Theme Toggle
+   */
+  const themeToggle = document.getElementById('theme-toggle');
+  const htmlEl = document.documentElement;
 
+  function getPreferredTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      htmlEl.setAttribute('data-theme', 'dark');
+    } else {
+      htmlEl.removeAttribute('data-theme');
+    }
+  }
+
+  // Apply theme on load
+  applyTheme(getPreferredTheme());
+
+  // Toggle on click
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function() {
+      const current = htmlEl.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      localStorage.setItem('theme', next);
+    });
+  }
+
+  // Listen for OS theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    if (!localStorage.getItem('theme')) {
+      applyTheme(e.matches ? 'dark' : 'light');
+    }
+  });
 
 })();

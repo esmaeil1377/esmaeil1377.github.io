@@ -1,58 +1,52 @@
 <!DOCTYPE html>
-<!-- upto 2 directory depth-->
 <html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Esmaeil Pahang - Frontend Developer Portfolio</title>
+  <title>Esmaeil Pahang - Frontend Engineer</title>
 
-  <!-- Meta Description for SEO -->
   <meta name="description"
-    content="Esmaeil Pahang is a skilled Frontend Developer with 3 years of experience in React, Next.js, and modern web technologies. Check out my portfolio to see my work and get in touch.">
+    content="Esmaeil Pahang is a Frontend Engineer with 3+ years of experience in React, Next.js, and modern web technologies. View my portfolio and get in touch.">
 
-  <!-- Meta Keywords -->
   <meta name="keywords"
-    content="Esmaeil Pahang, frontend developer, React, Next.js, JavaScript, portfolio, web development, Iran, Sharif University of Technology">
+    content="Esmaeil Pahang, frontend engineer, React, Next.js, JavaScript, portfolio, web development, Iran, Sharif University of Technology">
 
-  <!-- Author -->
   <meta name="author" content="Esmaeil Pahang">
 
-  <!-- Open Graph Meta Tags for Social Media Sharing -->
-  <meta property="og:title" content="Esmaeil Pahang - Frontend Developer Portfolio">
+  <meta property="og:title" content="Esmaeil Pahang - Frontend Engineer">
   <meta property="og:description"
-    content="Frontend Developer with experience in React, Next.js, and TypeScript. View my portfolio and recent projects.">
-  <meta property="og:image" content="https://example.com/images/avatar.png"> <!-- Update URL accordingly -->
+    content="Frontend Engineer with experience in React, Next.js, and TypeScript. View my portfolio and recent projects.">
+  <meta property="og:image" content="https://esmaeil1377.github.io/images/avatar.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com"> <!-- Update URL accordingly -->
+  <meta property="og:url" content="https://esmaeil1377.github.io">
 
-  <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Esmaeil Pahang - Frontend Developer">
+  <meta name="twitter:title" content="Esmaeil Pahang - Frontend Engineer">
   <meta name="twitter:description"
-    content="Frontend Developer specializing in React, Next.js, and modern web technologies. Visit my portfolio.">
-  <meta name="twitter:image" content="https://example.com/images/avatar.png"> <!-- Update URL accordingly -->
+    content="Frontend Engineer specializing in React, Next.js, and modern web technologies.">
+  <meta name="twitter:image" content="https://esmaeil1377.github.io/images/avatar.png">
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://example.com"> <!-- Update URL accordingly -->
+  <link rel="canonical" href="https://esmaeil1377.github.io">
 
   <link rel="icon" href="images/avatar.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
   <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" media="print"
     onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
   </noscript>
   <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
-  <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/main.css?ver=2.0.0" rel="stylesheet">
   <noscript>
     <style type="text/css">
       [data-aos] {
@@ -64,427 +58,419 @@
 </head>
 
 <body id="top">
+
   <header class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
-      <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">Esmaeil Pahang</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></button>
+      <div class="container">
+        <a class="link-dark navbar-brand site-title mb-0" href="#">EP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto me-2">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Work Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Pictures</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0112.478 3.34a9.003 9.003 0 109.274 11.662z" />
+            </svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.95l-.71.71M21 12h-1M4 12H3m16.95 7.95l-.71-.71M4.05 4.05l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </button>
         </div>
       </div>
     </nav>
   </header>
+
   <div class="page-content">
     <div id="content">
+
       <header>
         <div class="cover bg-light">
           <div class="container px-3">
-            <div class="row">
-              <div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello" />
-              </div>
-              <div class="col-lg-6">
-                <div class="mt-5">
-                  <p class="lead text-uppercase mb-1">Hello!</p>
-                  <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Esmaeil Pahang</h1>
-                  <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Frontend Developer</p>
-                  <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+            <div class="row align-items-center" style="min-height: 85vh;">
+              <div class="col-lg-7 order-lg-1 order-2">
+                <div class="py-5">
+                  <span class="hero-greeting" data-aos="fade-up">Hello, I'm</span>
+                  <h1 class="intro-title" data-aos="fade-up" data-aos-delay="50">Esmaeil Pahang</h1>
+                  <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Frontend Engineer crafting modern web experiences with React, Next.js & TypeScript.
+                  </p>
+                  <div class="d-flex align-items-center gap-3 mt-4" data-aos="fade-up" data-aos-delay="150">
+                    <a class="btn btn-primary hover-effect" href="#contact">
+                      Get In Touch <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                    <a class="btn btn-outline-secondary hover-effect" href="#experience">
+                      View Experience
+                    </a>
+                  </div>
+                  <div class="social-nav mt-4" data-aos="fade-up" data-aos-delay="200">
                     <nav role="navigation">
-                      <ul class="nav justify-content-left">
-                        <li class="nav-item"><a class="nav-link" target="blank" href="https://twitter.com/_esmaeil__"
-                            title="Twitter"><i class="fab fa-twitter"></i><span
-                              class="menu-title sr-only">Twitter</span></a></li>
-                        <li class="nav-item"><a class="nav-link" target="blank"
-                            href="https://www.instagram.com/esmaeil.phg/" title="Instagram"><i
-                              class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
-                        <li class="nav-item"><a class="nav-link" target="blank"
+                      <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/esmaeil1377"
+                            title="Github"><i class="fab bi-github"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank"
                             href="https://www.linkedin.com/in/esmaeil-pahang/" title="LinkedIn"><i
-                              class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-                        <li class="nav-item"><a class="nav-link" target="blank" href="https://github.com/esmaeil1377"
-                            title="Github"><i class="fab bi-github"></i><span
-                              class="menu-title sr-only">Github</span></a></li>
-                        <li class="nav-item"><a class="nav-link" target="blank" href="https://t.me/Esmaeil_Pahang"
-                            title="Telegram"><i class="fab bi-telegram"></i><span
-                              class="menu-title sr-only">Telegram</span></a></li>
+                              class="fab fa-linkedin"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank"
+                            href="https://twitter.com/_esmaeil__" title="Twitter"><i
+                              class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank"
+                            href="https://www.instagram.com/esmaeil.phg/" title="Instagram"><i
+                              class="fab fa-instagram"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank"
+                            href="https://t.me/Esmaeil_Pahang" title="Telegram"><i
+                              class="fab bi-telegram"></i></a></li>
                       </ul>
                     </nav>
                   </div>
-                  <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a
-                      class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i
-                        class="fas fa-arrow-right"></i></a></div>
                 </div>
+              </div>
+              <div class="col-lg-5 order-lg-2 order-1 text-center" data-aos="fade-left" data-aos-delay="100">
+                <img class="hero-illustration img-fluid" src="images/illustrations/hello3.svg" alt="Developer illustration" />
               </div>
             </div>
           </div>
         </div>
-        <div class="wave-bg"></div>
       </header>
-      <div class="section pt-4 px-3 px-lg-4" id="about">
+
+      <div class="section about-section px-3 px-lg-4" id="about">
         <div class="container-narrow">
-          <div class="row">
+          <div class="text-center mb-5">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <hr class="section-divider" data-aos="fade-up" data-aos-delay="50">
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-5 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="100">
+              <img class="avatar img-fluid" src="images/avatar.png" width="400" height="400" alt="Esmaeil Pahang" />
+            </div>
+            <div class="col-md-6 offset-md-1" data-aos="fade-left" data-aos-delay="150">
+              <h3 class="about-name">Esmaeil Pahang</h3>
+              <p class="about-text">
+                Frontend engineer with 3+ years of experience and a Computer Engineering degree from
+                Sharif University of Technology. I build performant, accessible web applications
+                using React and its ecosystem. Everything is possible!
+              </p>
+              <div class="row mt-4 g-3">
+                <div class="col-sm-6">
+                  <div class="about-info-label">Email</div>
+                  <div class="about-info-value">pahang1378@gmail.com</div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="about-info-label">Location</div>
+                  <div class="about-info-value">Tehran, Iran</div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="about-info-label">Status</div>
+                  <div class="about-info-value">Available</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section timeline-section px-3 px-lg-4" id="experience">
+        <div class="container-narrow">
+          <div class="text-center mb-5">
+            <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
+            <hr class="section-divider" data-aos="fade-up" data-aos-delay="50">
+          </div>
+          <ul class="timeline-with-icons">
+
+            <li class="timeline-item mb-4" data-aos="fade-up">
+              <span class="timeline-icon"></span>
+              <div class="timeline-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
+                  <h5 class="mb-0">
+                    <a href="https://raastin.com/" target="_blank">Raastin</a>
+                    <span class="timeline-role"> &middot; Frontend Developer</span>
+                  </h5>
+                  <span class="timeline-date">Mar 2024 &mdash; Present</span>
+                </div>
+                <div class="mt-2">
+                  <span class="tech-chip">React.js</span>
+                  <span class="tech-chip">Next.js</span>
+                  <span class="tech-chip">TypeScript</span>
+                  <span class="tech-chip">Git</span>
+                  <span class="tech-chip">Material-UI</span>
+                  <span class="tech-chip">React Native</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-item mb-4" data-aos="fade-up">
+              <span class="timeline-icon"></span>
+              <div class="timeline-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
+                  <h5 class="mb-0">
+                    <a href="https://idekavan.com/" target="_blank">Idekavan Group</a>
+                    <span class="timeline-role"> &middot; Frontend Developer</span>
+                  </h5>
+                  <span class="timeline-date">Aug 2023 &mdash; Mar 2024 (8 months)</span>
+                </div>
+                <div class="mt-2">
+                  <span class="tech-chip">React.js</span>
+                  <span class="tech-chip">Next.js</span>
+                  <span class="tech-chip">TypeScript</span>
+                  <span class="tech-chip">Redux</span>
+                  <span class="tech-chip">Saga</span>
+                  <span class="tech-chip">Material-UI</span>
+                  <span class="tech-chip">Goober</span>
+                  <span class="tech-chip">next-i18next</span>
+                  <span class="tech-chip">TDD</span>
+                </div>
+                <p class="timeline-description">
+                  Built solutions for <a href="https://behtarino.com/" target="_blank">behtarino.com</a>,
+                  <a href="https://vitrin.me/" target="_blank">vitrin.me</a>,
+                  <a href="https://daramad.me/" target="_blank">daramad.me</a> and
+                  <a href="https://dobare.me/" target="_blank">dobare.me</a> &mdash;
+                  platforms empowering small and medium businesses.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-item mb-4" data-aos="fade-up">
+              <span class="timeline-icon"></span>
+              <div class="timeline-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
+                  <h5 class="mb-0">
+                    <a href="https://rentaltracker.com/" target="_blank">Rental Tracker Inc</a>
+                    <span class="timeline-role"> &middot; Frontend Developer</span>
+                  </h5>
+                  <span class="timeline-date">May 2022 &mdash; Aug 2023 (16 months)</span>
+                </div>
+                <div class="mt-2">
+                  <span class="tech-chip">React.js</span>
+                  <span class="tech-chip">Ag-Grid</span>
+                  <span class="tech-chip">Antd</span>
+                  <span class="tech-chip">Redux</span>
+                  <span class="tech-chip">Redux-Form</span>
+                  <span class="tech-chip">Sass</span>
+                  <span class="tech-chip">Saga</span>
+                  <span class="tech-chip">Axios</span>
+                </div>
+                <p class="timeline-description">
+                  Developed inventory management tools for filmmaking equipment rental companies.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-item mb-4" data-aos="fade-up">
+              <span class="timeline-icon"></span>
+              <div class="timeline-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
+                  <h5 class="mb-0">
+                    <a href="https://automoby.ir/" target="_blank">Automoby</a>
+                    <span class="timeline-role"> &middot; React Developer</span>
+                  </h5>
+                  <span class="timeline-date">Oct 2021 &mdash; May 2022 (8 months)</span>
+                </div>
+                <div class="mt-2">
+                  <span class="tech-chip">React.js</span>
+                  <span class="tech-chip">Next.js</span>
+                  <span class="tech-chip">TypeScript</span>
+                  <span class="tech-chip">Material UI</span>
+                  <span class="tech-chip">Context API</span>
+                  <span class="tech-chip">Sass</span>
+                </div>
+                <p class="timeline-description">
+                  Deepened expertise with React and Next.js frameworks through professional application development.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-item mb-4" data-aos="fade-up">
+              <span class="timeline-icon"></span>
+              <div class="timeline-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
+                  <h5 class="mb-0">
+                    Laboratory of Fazli, M.A.
+                    <span class="timeline-role"> &middot; React Developer</span>
+                  </h5>
+                  <span class="timeline-date">Sep 2021 &mdash; Mar 2022 (7 months)</span>
+                </div>
+                <div class="mt-2">
+                  <span class="tech-chip">React.js</span>
+                  <span class="tech-chip">Sass</span>
+                  <span class="tech-chip">Highcharts</span>
+                  <span class="tech-chip">D3.js</span>
+                  <span class="tech-chip">TradingView</span>
+                </div>
+                <p class="timeline-description">
+                  Worked in Dr. Mohammad Amin Fazli's laboratory on data visualization for BSc project.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-item mb-4" data-aos="fade-up">
+              <span class="timeline-icon"></span>
+              <div class="timeline-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
+                  <h5 class="mb-0">
+                    Borhan Sharif
+                    <span class="timeline-role"> &middot; Frontend Intern</span>
+                  </h5>
+                  <span class="timeline-date">Jul 2021 &mdash; Aug 2021 (1 month)</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="section education-section px-3 px-lg-4" id="education">
+        <div class="container-narrow">
+          <div class="text-center mb-5">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <hr class="section-divider" data-aos="fade-up" data-aos-delay="50">
+          </div>
+          <ul class="timeline-with-icons">
+            <li class="timeline-item mb-4" data-aos="fade-up">
+              <span class="timeline-icon"></span>
+              <div class="timeline-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
+                  <h5 class="mb-0">Sharif University of Technology</h5>
+                  <span class="timeline-date">2018 &mdash; 2023</span>
+                </div>
+                <p class="timeline-description mb-0">
+                  Bachelor of Science in Computer Engineering
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section skills-section px-3 px-lg-4" id="skills">
+        <div class="container-narrow">
+          <div class="text-center mb-5">
+            <h2 class="section-title" data-aos="fade-up">Skills</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">
+              Technologies and tools I work with
+            </p>
+            <hr class="section-divider" data-aos="fade-up" data-aos-delay="100">
+          </div>
+          <div class="row g-4" data-aos="fade-up" data-aos-delay="150">
             <div class="col-md-6">
-              <h2 class="h4 my-2">Hello! I’m Esmaeil Pahang.</h2>
-              <p>Frontend developer with 3 years of experience in frontend development and graduate of Computer
-                Engineering from Sharif University of Technology. During this time, I mainly worked with React framework
-                and related technologies. Everything Is Possible!</p>
-              <div class="row mt-3">
-                <div class="col-sm-2">
-                  <div class="pb-1">Age:</div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="pb-1 fw-bolder">25</div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="pb-1">Email:</div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="pb-1 fw-bolder">pahang1378@gmail.com</div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="pb-1">Skype:</div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="pb-1 fw-bolder">live:pahang1378_1</div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="pb-1">Phone:</div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="pb-1 fw-bolder">+989104493042</div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="pb-1">Address:</div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="pb-1 fw-bolder">Iran, Tehran</div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="pb-1">Status:</div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="pb-1 fw-bolder">Available</div>
+              <div class="skill-category">
+                <div class="skill-category-title">Languages</div>
+                <div class="skill-box">
+                  <span class="skill-item">JavaScript</span>
+                  <span class="skill-item">TypeScript</span>
+                  <span class="skill-item">HTML</span>
+                  <span class="skill-item">CSS</span>
+                  <span class="skill-item">Java</span>
                 </div>
               </div>
             </div>
-            <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img
-                class="avatar img-fluid mt-2" src="images/avatar.png" width="400" height="400" alt="Esmaeil Pahang" />
+            <div class="col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-title">Frameworks</div>
+                <div class="skill-box">
+                  <span class="skill-item">React</span>
+                  <span class="skill-item">Next.js</span>
+                  <span class="skill-item">React Native</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="section px-3 px-lg-4 pt-5" id="services">
-        <div class="container-narrow">
-          <div class="text-center mb-5">
-            <h2 class="marker marker-center">Work Experience</h2>
-          </div>
-          <section class="py-5">
-            <ul class="timeline-with-icons">
-              <li class="timeline-item mb-5">
-                <span class="timeline-icon">
-                </span>
-
-                <h5 class="fw-bold"><a class="nav-link d-contents" href="https://raastin.com/"
-                    target="_blank">Raastin</a> |
-                  Frontend Developer</h5>
-                <p class="text-muted mb-2 fw-bold">
-                  March 2024 - Present
-                </p>
-                <div class="row mt-3">
-                  <div class="col-sm-2">
-                    <div class="pb-1">Technologies:</div>
-                  </div>
-                  <div class="col-sm-10">
-                    <div class="pb-1 fw-bolder">React.js - Next.js - Front-end Development - TypeScript -
-                      Git - Material-UI - React Native</div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="timeline-item mb-5">
-                <span class="timeline-icon">
-                </span>
-
-                <h5 class="fw-bold"><a class="nav-link d-contents" href="https://idekavan.com/" target="_blank">Idekavan
-                    Group</a> |
-                  Frontend Developer</h5>
-                <p class="text-muted mb-2 fw-bold">August 2023 - March 2024(8 months)</p>
-                <div class="row mt-3">
-                  <div class="col-sm-2">
-                    <div class="pb-1">Technologies:</div>
-                  </div>
-                  <div class="col-sm-10">
-                    <div class="pb-1 fw-bolder">React.js - Next.js - Front-end Development - JavaScript - TypeScript -
-                      Git - Redux - Saga - Test-Driven Development - Material-UI - Goober - next-i18next</div>
-                  </div>
-                </div>
-                <p class="text-muted">
-                  Idekavan provides solutions such as <a class="nav-link d-contents" href="https://behtarino.com/"
-                    target="_blank">behtarino.com</a>, <a class="nav-link d-contents" href="https://vitrin.me/"
-                    target="_blank">vitrin.me</a>, <a class="nav-link d-contents" href="https://daramad.me/"
-                    target="_blank">daramad.me</a> and <a class="nav-link d-contents" href="https://dobare.me/"
-                    target="_blank">dobare.me</a> to
-                  empower small and medium businesses.
-                </p>
-              </li>
-
-              <li class="timeline-item mb-5">
-                <span class="timeline-icon">
-                </span>
-
-                <h5 class="fw-bold"><a class="nav-link d-contents" href="https://rentaltracker.com/"
-                    target="_blank">Rental Tracker Inc</a> | Frontend Developer</h5>
-                <p class="text-muted mb-2 fw-bold">May 2022 - August 2023(16 months)</p>
-                <div class="row mt-3">
-                  <div class="col-sm-2">
-                    <div class="pb-1">Technologies:</div>
-                  </div>
-                  <div class="col-sm-10">
-                    <div class="pb-1 fw-bolder">React.js - Ag-grid - Antd - Redux - Redux-form - Sass - Saga - Axios
-                    </div>
-                  </div>
-                </div>
-                <p class="text-muted">
-                  The product of this company is used for the storage of filmmaking equipment rental
-                  companies.
-                </p>
-              </li>
-
-              <li class="timeline-item mb-5">
-                <span class="timeline-icon">
-                </span>
-
-                <h5 class="fw-bold"><a class="nav-link d-contents" href="https://automoby.ir/"
-                    target="_blank">Automoby</a> | React Developer</h5>
-                <p class="text-muted mb-2 fw-bold">Oct 2021 - May 2022(8 months)</p>
-                <div class="row mt-3">
-                  <div class="col-sm-2">
-                    <div class="pb-1">Technologies:</div>
-                  </div>
-                  <div class="col-sm-10">
-                    <div class="pb-1 fw-bolder">React.js - Next Js - TypeScript - Material UI - Context - Sass
-                    </div>
-                  </div>
-                </div>
-                <p class="text-muted">
-                  When I worked for this company, I became very involved with React Framework and
-                  performed professionally with this Framework. I also got to know more about Next
-                  Framework.
-                </p>
-              </li>
-
-              <li class="timeline-item mb-5">
-                <span class="timeline-icon">
-                </span>
-
-                <h5 class="fw-bold">Laboratory of Fazli, M.A. | React Developer</h5>
-                <p class="text-muted mb-2 fw-bold">September 2021 - March 2022(7 months)</p>
-                <div class="row mt-3">
-                  <div class="col-sm-2">
-                    <div class="pb-1">Technologies:</div>
-                  </div>
-                  <div class="col-sm-10">
-                    <div class="pb-1 fw-bolder">React.js - Sass - Drawing libraries such as Highcharts, D3, TradingView
-                    </div>
-                  </div>
-                </div>
-                <p class="text-muted">
-                  In the last term of university, I worked in Dr. Mohammad Amin Fazli's laboratory to pass the
-                  BSC Project.
-                </p>
-              </li>
-
-              <li class="timeline-item mb-5">
-                <span class="timeline-icon">
-                </span>
-
-                <h5 class="fw-bold">Borhan Sharif | Frontend internship</h5>
-                <p class="text-muted mb-2 fw-bold">July 2021 - August 2021(1 months)</p>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </div>
-
-      <div class="section px-3 px-lg-4 pt-5" id="education">
-        <div class="container-narrow">
-          <div class="text-center mb-5">
-            <h2 class="marker marker-center">Education</h2>
-          </div>
-          <section class="py-5">
-            <ul class="timeline-with-icons">
-              <li class="timeline-item mb-5">
-                <span class="timeline-icon">
-                </span>
-
-                <h5 class="fw-bold">Sharif University of Technology</h5>
-                <p class="text-muted mb-2 fw-bold">2018 - 2023</p>
-                <p class="text-muted">
-                  Bachelor of Science in Computer Engineering.
-                </p>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </div>
-      <div class="section px-3 px-lg-4 pt-5" id="skills">
-        <div class="container-narrow">
-          <div class="text-center mb-5">
-            <h2 class="marker marker-center">My Skills</h2>
-          </div>
-          <div class="text-center">
-            <p class="mx-auto mb-3" style="max-width:600px">I am a quick learner and specialize in multitude of skills
-              required for Frontend Development</p>
-          </div>
-          <div class="bg-light p-3">
-            <div class="row">
-              <div class="skill-box">
-                <div class="d-flex text-small fw-bolder skill-title">Programming Languages:</div>
-                <div class="skill-item yellow-color">
-                  JavaScript
-                </div>
-                <div class="skill-item yellow-color">
-                  HTML
-                </div>
-                <div class="skill-item yellow-color">
-                  CSS
-                </div>
-                <div class="skill-item yellow-color">
-                  TypeScript
-                </div>
-                <div class="skill-item yellow-color">
-                  Java
+            <div class="col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-title">Libraries & Tools</div>
+                <div class="skill-box">
+                  <span class="skill-item">Redux</span>
+                  <span class="skill-item">Redux-Form</span>
+                  <span class="skill-item">Redux-Saga</span>
+                  <span class="skill-item">Ag-Grid</span>
+                  <span class="skill-item">Axios</span>
                 </div>
               </div>
-              <div class="skill-box">
-                <div class="d-flex text-small fw-bolder skill-title">Frameworks:</div>
-                <div class="skill-item blue-color">
-                  React
-                </div>
-                <div class="skill-item blue-color">
-                  NextJS
-                </div>
-                <div class="skill-item blue-color">
-                  React Native
-                </div>
-              </div>
-              <div class="skill-box">
-                <div class="d-flex text-small fw-bolder skill-title">React Libraries:</div>
-                <div class="skill-item pink-color">
-                  Redux
-                </div>
-                <div class="skill-item pink-color">
-                  Redux-Form
-                </div>
-                <div class="skill-item pink-color">
-                  Redux-Saga
-                </div>
-                <div class="skill-item pink-color">
-                  Ag-Grid
-                </div>
-                <div class="skill-item pink-color">
-                  Axios
+            </div>
+            <div class="col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-title">Practices & Concepts</div>
+                <div class="skill-box">
+                  <span class="skill-item">Git</span>
+                  <span class="skill-item">Agile & Scrum</span>
+                  <span class="skill-item">RESTful API</span>
+                  <span class="skill-item">OOP</span>
+                  <span class="skill-item">SOLID</span>
                 </div>
               </div>
-              <div class="skill-box">
-                <div class="d-flex text-small fw-bolder skill-title">Other:</div>
-                <div class="skill-item gray-color">
-                  Git
-                </div>
-                <div class="skill-item gray-color">
-                  Agile & Scrum
-                </div>
-                <div class="skill-item gray-color">
-                  DOM Manipulation
-                </div>
-                <div class="skill-item gray-color">
-                  RESTful API
-                </div>
-                <div class="skill-item gray-color">
-                  OOP
-                </div>
-                <div class="skill-item gray-color">
-                  Solid
-                </div>
-              </div>
-              <div class="skill-box">
-                <div class="d-flex text-small fw-bolder skill-title">Soft Skills:</div>
-                <div class="skill-item green-color">
-                  Teamwork
-                </div>
-                <div class="skill-item green-color">
-                  Communication
-                </div>
-                <div class="skill-item green-color">
-                  Problem-solving
-                </div>
-                <div class="skill-item green-color">
-                  Adaptability
+            </div>
+            <div class="col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-title">Soft Skills</div>
+                <div class="skill-box">
+                  <span class="skill-item">Teamwork</span>
+                  <span class="skill-item">Communication</span>
+                  <span class="skill-item">Problem-solving</span>
+                  <span class="skill-item">Adaptability</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
+
+      <div class="section contact-section px-3 px-lg-4" id="contact">
         <div class="container-narrow">
           <div class="text-center mb-5">
-            <h2 class="marker marker-center">Contact Me</h2>
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">
+              Have a project in mind? Let's work together.
+            </p>
+            <hr class="section-divider" data-aos="fade-up" data-aos-delay="100">
           </div>
           <div class="row">
-            <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-              <div class="bg-light my-2 p-3 pt-2">
-                <form action="https://formspree.io/f/myyalgyr" method="POST">
-                  <div class="form-group my-2">
-                    <label for="name" class="form-label fw-bolder">Name</label>
-                    <input class="form-control" type="text" id="name" name="name" required>
-                  </div>
-                  <div class="form-group my-2">
-                    <label for="email" class="form-label fw-bolder">Email</label>
-                    <input class="form-control" type="email" id="email" name="_replyto" required>
-                  </div>
-                  <div class="form-group my-2">
-                    <label for="message" class="form-label fw-bolder">Message</label>
-                    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"
-                      required></textarea>
-                  </div>
-                  <button class="btn btn-primary mt-2" type="submit">Send</button>
-                </form>
-              </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <form action="https://formspree.io/f/myyalgyr" method="POST">
+                <div class="form-group mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input class="form-control" type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input class="form-control" type="email" id="email" name="_replyto" placeholder="your@email.com"
+                    required>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" style="resize: none;" id="message" name="message" rows="5"
+                    placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button class="btn btn-primary w-100" type="submit">Send Message</button>
+              </form>
             </div>
-            <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-              <div class="mt-3 px-1">
-                <div class="h5">Let’s talk how I can help you!</div>
-                <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
-                <p>Or get in touch using my email, skype or my contact number.</p>
-                <p>See you!</p>
-              </div>
-              <div class="mt-53 px-1">
-                <div class="row">
-                  <div class="col-sm-2">
-                    <div class="pb-1">Email:</div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="contact-info-block">
+                <div class="h5 mb-3">Let's talk!</div>
+                <p>
+                  If you'd like to work together or just want to say hello, feel free to reach out
+                  through the form or any of the channels below.
+                </p>
+                <div class="mt-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-envelope me-3" style="color: var(--color-accent); width: 20px;"></i>
+                    <div>
+                      <div class="about-info-label">Email</div>
+                      <div class="about-info-value">pahang1378@gmail.com</div>
+                    </div>
                   </div>
-                  <div class="col-sm-10">
-                    <div class="pb-1 fw-bolder">pahang1378@gmail.com</div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="pb-1">Skype:</div>
-                  </div>
-                  <div class="col-sm-10">
-                    <div class="pb-1 fw-bolder">live:pahang1378_1</div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="pb-1">Phone:</div>
-                  </div>
-                  <div class="col-sm-10">
-                    <div class="pb-1 fw-bolder">+989104493042</div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-map-marker-alt me-3" style="color: var(--color-accent); width: 20px;"></i>
+                    <div>
+                      <div class="about-info-label">Location</div>
+                      <div class="about-info-value">Tehran, Iran</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -492,46 +478,50 @@
           </div>
         </div>
       </div>
-      <footer class="pt-4 pb-4 text-center bg-light">
+
+      <footer class="pt-4 pb-4 text-center">
         <div class="container">
           <div class="my-3">
             <div class="h4">Esmaeil Pahang</div>
-            <p>Frontend Developer</p>
+            <p>Frontend Engineer</p>
             <div class="social-nav">
               <nav role="navigation">
                 <ul class="nav justify-content-center">
-                  <li class="nav-item"><a class="nav-link" target="blank" href="https://twitter.com/_esmaeil__"
-                      title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" target="blank" href="https://www.instagram.com/esmaeil.phg/"
-                      title="Instagram"><i class="fab fa-instagram"></i><span
-                        class="menu-title sr-only">Instagram</span></a></li>
-                  <li class="nav-item"><a class="nav-link" target="blank"
+                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/esmaeil1377"
+                      title="Github"><i class="fab bi-github"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank"
                       href="https://www.linkedin.com/in/esmaeil-pahang/" title="LinkedIn"><i
-                        class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-                  <li class="nav-item"><a class="nav-link" target="blank" href="https://github.com/esmaeil1377"
-                      title="Github"><i class="fab bi-github"></i><span class="menu-title sr-only">Github</span></a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" target="blank" href="https://t.me/Esmaeil_Pahang"
-                      title="Telegram"><i class="fab bi-telegram"></i><span
-                        class="menu-title sr-only">Telegram</span></a></li>
+                        class="fab fa-linkedin"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://twitter.com/_esmaeil__"
+                      title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank"
+                      href="https://www.instagram.com/esmaeil.phg/" title="Instagram"><i
+                        class="fab fa-instagram"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://t.me/Esmaeil_Pahang"
+                      title="Telegram"><i class="fab bi-telegram"></i></a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </div>
       </footer>
+
     </div>
   </div>
-  <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i
-          class="fas fa-angle-up fa-x"></i></span></a></div>
+
+  <div id="scrolltop">
+    <a class="btn btn-secondary" href="#top">
+      <span class="icon"><i class="fas fa-angle-up fa-x"></i></span>
+    </a>
+  </div>
+
   <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
   <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
   <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
   <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
   <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
   <script src="./scripts/aos.min.js?ver=1.2.0"></script>
-  <script src="./scripts/main.js?ver=1.2.0"></script>
+  <script src="./scripts/main.js?ver=2.0.0"></script>
 </body>
 
 </html>
