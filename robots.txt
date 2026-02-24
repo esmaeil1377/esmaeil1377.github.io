@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://esmaeil1377.github.io/sitemap.xml
