@@ -57,18 +57,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
   <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     media="print" onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
   </noscript>
   <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
-  <link href="./css/main.css?ver=2.0.0" rel="stylesheet">
+  <link href="./css/main.css?ver=3.0.0" rel="stylesheet">
   <noscript>
     <style type="text/css">
       [data-aos] {
@@ -81,16 +82,30 @@
 
 <body id="top">
 
+  <!-- Skip to Content (Accessibility) -->
+  <a href="#content" class="skip-link">Skip to main content</a>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
   <header class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation"
+      aria-label="Main navigation">
       <div class="container">
         <a class="link-dark navbar-brand site-title mb-0" href="#">EP</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto" id="nav-links">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
@@ -126,7 +141,7 @@
                   <span class="hero-greeting" data-aos="fade-up">Hello, I'm</span>
                   <h1 class="intro-title" data-aos="fade-up" data-aos-delay="50">Esmaeil Pahang</h1>
                   <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
-                    Frontend Engineer crafting modern web experiences with React, Next.js & TypeScript.
+                    I'm a <span class="typed-text" id="typed-text"></span><span class="typed-cursor">|</span>
                   </p>
                   <div class="d-flex align-items-center gap-3 mt-4" data-aos="fade-up" data-aos-delay="150">
                     <a class="btn btn-primary hover-effect" href="#contact">
@@ -137,27 +152,30 @@
                     </a>
                   </div>
                   <div class="social-nav mt-4" data-aos="fade-up" data-aos-delay="200">
-                    <nav role="navigation">
+                    <nav role="navigation" aria-label="Social media links">
                       <ul class="nav">
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/esmaeil1377"
-                            title="Github"><i class="fab bi-github"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank"
-                            href="https://www.linkedin.com/in/esmaeil-pahang/" title="LinkedIn"><i
+                        <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/esmaeil1377" aria-label="Visit my GitHub profile"><i
+                              class="fab bi-github"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                            href="https://www.linkedin.com/in/esmaeil-pahang/" aria-label="Visit my LinkedIn profile"><i
                               class="fab fa-linkedin"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://twitter.com/_esmaeil__"
-                            title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank"
-                            href="https://www.instagram.com/esmaeil.phg/" title="Instagram"><i
+                        <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                            href="https://twitter.com/_esmaeil__" aria-label="Visit my Twitter profile"><i
+                              class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/esmaeil.phg/" aria-label="Visit my Instagram profile"><i
                               class="fab fa-instagram"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://t.me/Esmaeil_Pahang"
-                            title="Telegram"><i class="fab bi-telegram"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                            href="https://t.me/Esmaeil_Pahang" aria-label="Contact me on Telegram"><i
+                              class="fab bi-telegram"></i></a></li>
                       </ul>
                     </nav>
                   </div>
                 </div>
               </div>
               <div class="col-lg-5 order-lg-2 order-1 text-center" data-aos="fade-left" data-aos-delay="100">
-                <img class="hero-illustration img-fluid" src="images/illustrations/hello3.svg"
+                <img class="hero-illustration img-fluid" src="images/illustrations/hello3.svg" loading="lazy"
                   alt="Developer illustration" />
               </div>
             </div>
@@ -173,7 +191,11 @@
           </div>
           <div class="row align-items-center">
             <div class="col-md-5 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="100">
-              <img class="avatar img-fluid" src="images/avatar.png" width="400" height="400" alt="Esmaeil Pahang" />
+              <picture>
+                <source srcset="images/avatar.webp" type="image/webp">
+                <img class="avatar img-fluid" src="images/avatar.png" width="400" height="400" loading="lazy"
+                  alt="Esmaeil Pahang" />
+              </picture>
             </div>
             <div class="col-md-6 offset-md-1" data-aos="fade-left" data-aos-delay="150">
               <h3 class="about-name">Esmaeil Pahang</h3>
@@ -193,7 +215,9 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="about-info-label">Status</div>
-                  <div class="about-info-value">Available</div>
+                  <div class="about-info-value status-available">
+                    <span class="status-dot"></span> Available
+                  </div>
                 </div>
               </div>
             </div>
@@ -209,12 +233,12 @@
           </div>
           <ul class="timeline-with-icons">
 
-            <li class="timeline-item mb-4" data-aos="fade-up">
+            <li class="timeline-item mb-4" data-aos="fade-up" data-aos-delay="50">
               <span class="timeline-icon"></span>
               <div class="timeline-card">
                 <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
                   <h5 class="mb-0">
-                    <a href="https://raastin.com/" target="_blank">Raastin</a>
+                    <a href="https://raastin.com/" target="_blank" rel="noopener noreferrer">Raastin</a>
                     <span class="timeline-role"> &middot; Frontend Developer</span>
                   </h5>
                   <span class="timeline-date">Mar 2024 &mdash; Present</span>
@@ -230,12 +254,12 @@
               </div>
             </li>
 
-            <li class="timeline-item mb-4" data-aos="fade-up">
+            <li class="timeline-item mb-4" data-aos="fade-up" data-aos-delay="100">
               <span class="timeline-icon"></span>
               <div class="timeline-card">
                 <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
                   <h5 class="mb-0">
-                    <a href="https://idekavan.com/" target="_blank">Idekavan Group</a>
+                    <a href="https://idekavan.com/" target="_blank" rel="noopener noreferrer">Idekavan Group</a>
                     <span class="timeline-role"> &middot; Frontend Developer</span>
                   </h5>
                   <span class="timeline-date">Aug 2023 &mdash; Mar 2024 (8 months)</span>
@@ -252,21 +276,23 @@
                   <span class="tech-chip">TDD</span>
                 </div>
                 <p class="timeline-description">
-                  Built solutions for <a href="https://behtarino.com/" target="_blank">behtarino.com</a>,
-                  <a href="https://vitrin.me/" target="_blank">vitrin.me</a>,
-                  <a href="https://daramad.me/" target="_blank">daramad.me</a> and
-                  <a href="https://dobare.me/" target="_blank">dobare.me</a> &mdash;
+                  Built solutions for <a href="https://behtarino.com/" target="_blank"
+                    rel="noopener noreferrer">behtarino.com</a>,
+                  <a href="https://vitrin.me/" target="_blank" rel="noopener noreferrer">vitrin.me</a>,
+                  <a href="https://daramad.me/" target="_blank" rel="noopener noreferrer">daramad.me</a> and
+                  <a href="https://dobare.me/" target="_blank" rel="noopener noreferrer">dobare.me</a> &mdash;
                   platforms empowering small and medium businesses.
                 </p>
               </div>
             </li>
 
-            <li class="timeline-item mb-4" data-aos="fade-up">
+            <li class="timeline-item mb-4" data-aos="fade-up" data-aos-delay="150">
               <span class="timeline-icon"></span>
               <div class="timeline-card">
                 <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
                   <h5 class="mb-0">
-                    <a href="https://rentaltracker.com/" target="_blank">Rental Tracker Inc</a>
+                    <a href="https://rentaltracker.com/" target="_blank" rel="noopener noreferrer">Rental Tracker
+                      Inc</a>
                     <span class="timeline-role"> &middot; Frontend Developer</span>
                   </h5>
                   <span class="timeline-date">May 2022 &mdash; Aug 2023 (16 months)</span>
@@ -287,12 +313,12 @@
               </div>
             </li>
 
-            <li class="timeline-item mb-4" data-aos="fade-up">
+            <li class="timeline-item mb-4" data-aos="fade-up" data-aos-delay="200">
               <span class="timeline-icon"></span>
               <div class="timeline-card">
                 <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
                   <h5 class="mb-0">
-                    <a href="https://automoby.ir/" target="_blank">Automoby</a>
+                    <a href="https://automoby.ir/" target="_blank" rel="noopener noreferrer">Automoby</a>
                     <span class="timeline-role"> &middot; React Developer</span>
                   </h5>
                   <span class="timeline-date">Oct 2021 &mdash; May 2022 (8 months)</span>
@@ -311,7 +337,7 @@
               </div>
             </li>
 
-            <li class="timeline-item mb-4" data-aos="fade-up">
+            <li class="timeline-item mb-4" data-aos="fade-up" data-aos-delay="250">
               <span class="timeline-icon"></span>
               <div class="timeline-card">
                 <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
@@ -334,7 +360,7 @@
               </div>
             </li>
 
-            <li class="timeline-item mb-4" data-aos="fade-up">
+            <li class="timeline-item mb-4" data-aos="fade-up" data-aos-delay="300">
               <span class="timeline-icon"></span>
               <div class="timeline-card">
                 <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
@@ -354,11 +380,11 @@
       <div class="section education-section px-3 px-lg-4" id="education">
         <div class="container-narrow">
           <div class="text-center mb-5">
-            <h2 class="section-title" data-aos="fade-up">Education</h2>
-            <hr class="section-divider" data-aos="fade-up" data-aos-delay="50">
+            <h2 class="section-title" data-aos="zoom-in">Education</h2>
+            <hr class="section-divider" data-aos="zoom-in" data-aos-delay="50">
           </div>
           <ul class="timeline-with-icons">
-            <li class="timeline-item mb-4" data-aos="fade-up">
+            <li class="timeline-item mb-4" data-aos="zoom-in" data-aos-delay="100">
               <span class="timeline-icon"></span>
               <div class="timeline-card">
                 <div class="d-flex flex-wrap justify-content-between align-items-start mb-1">
@@ -383,8 +409,8 @@
             </p>
             <hr class="section-divider" data-aos="fade-up" data-aos-delay="100">
           </div>
-          <div class="row g-4" data-aos="fade-up" data-aos-delay="150">
-            <div class="col-md-6">
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="flip-up" data-aos-delay="100">
               <div class="skill-category">
                 <div class="skill-category-title">Languages</div>
                 <div class="skill-box">
@@ -396,7 +422,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="flip-up" data-aos-delay="150">
               <div class="skill-category">
                 <div class="skill-category-title">Frameworks</div>
                 <div class="skill-box">
@@ -406,7 +432,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="flip-up" data-aos-delay="200">
               <div class="skill-category">
                 <div class="skill-category-title">Libraries & Tools</div>
                 <div class="skill-box">
@@ -418,7 +444,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="flip-up" data-aos-delay="250">
               <div class="skill-category">
                 <div class="skill-category-title">Practices & Concepts</div>
                 <div class="skill-box">
@@ -430,7 +456,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="flip-up" data-aos-delay="300">
               <div class="skill-category">
                 <div class="skill-category-title">Soft Skills</div>
                 <div class="skill-box">
@@ -454,22 +480,26 @@
             </p>
             <hr class="section-divider" data-aos="fade-up" data-aos-delay="100">
           </div>
-          <div class="row">
+          <div class="row row-gap-mobile">
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <form action="https://formspree.io/f/myyalgyr" method="POST">
+              <form id="contact-form" action="https://formspree.io/f/myyalgyr" method="POST" novalidate>
                 <div class="form-group mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input class="form-control" type="text" id="name" name="name" placeholder="Your name" required>
+                  <input class="form-control" type="text" id="name" name="name" placeholder="Your name" required
+                    aria-describedby="name-error">
+                  <div class="form-error-msg" id="name-error" role="alert" aria-live="polite"></div>
                 </div>
                 <div class="form-group mb-3">
                   <label for="email" class="form-label">Email</label>
                   <input class="form-control" type="email" id="email" name="_replyto" placeholder="your@email.com"
-                    required>
+                    required aria-describedby="email-error">
+                  <div class="form-error-msg" id="email-error" role="alert" aria-live="polite"></div>
                 </div>
                 <div class="form-group mb-3">
                   <label for="message" class="form-label">Message</label>
                   <textarea class="form-control" style="resize: none;" id="message" name="message" rows="5"
-                    placeholder="Tell me about your project..." required></textarea>
+                    placeholder="Tell me about your project..." required aria-describedby="message-error"></textarea>
+                  <div class="form-error-msg" id="message-error" role="alert" aria-live="polite"></div>
                 </div>
                 <button class="btn btn-primary w-100" type="submit">Send Message</button>
               </form>
@@ -483,14 +513,16 @@
                 </p>
                 <div class="mt-4">
                   <div class="d-flex align-items-center mb-3">
-                    <i class="fas fa-envelope me-3" style="color: var(--color-accent); width: 20px;"></i>
+                    <i class="fas fa-envelope me-3" style="color: var(--color-accent-warm); width: 20px;"
+                      aria-hidden="true"></i>
                     <div>
                       <div class="about-info-label">Email</div>
                       <div class="about-info-value">esmaeil.frontend@gmail.com</div>
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <i class="fas fa-map-marker-alt me-3" style="color: var(--color-accent); width: 20px;"></i>
+                    <i class="fas fa-map-marker-alt me-3" style="color: var(--color-accent-warm); width: 20px;"
+                      aria-hidden="true"></i>
                     <div>
                       <div class="about-info-label">Location</div>
                       <div class="about-info-value">Tehran, Iran</div>
@@ -509,19 +541,23 @@
             <div class="h4">Esmaeil Pahang</div>
             <p>Frontend Engineer</p>
             <div class="social-nav">
-              <nav role="navigation">
+              <nav role="navigation" aria-label="Footer social media links">
                 <ul class="nav justify-content-center">
-                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/esmaeil1377"
-                      title="Github"><i class="fab bi-github"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" target="_blank"
-                      href="https://www.linkedin.com/in/esmaeil-pahang/" title="LinkedIn"><i
+                  <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                      href="https://github.com/esmaeil1377" aria-label="Visit my GitHub profile"><i
+                        class="fab bi-github"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                      href="https://www.linkedin.com/in/esmaeil-pahang/" aria-label="Visit my LinkedIn profile"><i
                         class="fab fa-linkedin"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://twitter.com/_esmaeil__"
-                      title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.instagram.com/esmaeil.phg/"
-                      title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://t.me/Esmaeil_Pahang"
-                      title="Telegram"><i class="fab bi-telegram"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                      href="https://twitter.com/_esmaeil__" aria-label="Visit my Twitter profile"><i
+                        class="fab fa-twitter"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                      href="https://www.instagram.com/esmaeil.phg/" aria-label="Visit my Instagram profile"><i
+                        class="fab fa-instagram"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer"
+                      href="https://t.me/Esmaeil_Pahang" aria-label="Contact me on Telegram"><i
+                        class="fab bi-telegram"></i></a></li>
                 </ul>
               </nav>
             </div>
@@ -532,9 +568,12 @@
     </div>
   </div>
 
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite"></div>
+
   <div id="scrolltop">
-    <a class="btn btn-secondary" href="#top">
-      <span class="icon"><i class="fas fa-angle-up fa-x"></i></span>
+    <a class="btn btn-secondary" href="#top" aria-label="Scroll to top">
+      <span class="icon"><i class="fas fa-angle-up fa-x" aria-hidden="true"></i></span>
     </a>
   </div>
 
@@ -544,7 +583,7 @@
   <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
   <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
   <script src="./scripts/aos.min.js?ver=1.2.0"></script>
-  <script src="./scripts/main.js?ver=2.0.0"></script>
+  <script src="./scripts/main.js?ver=3.0.0"></script>
 </body>
 
 </html>
