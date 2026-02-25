@@ -107,7 +107,7 @@
   // ============================
   var typedElement = document.getElementById('typed-text');
   var phrases = [
-    'Frontend Engineer',
+    'Frontend Developer',
     'React Developer',
     'UI Enthusiast',
     'Problem Solver'
